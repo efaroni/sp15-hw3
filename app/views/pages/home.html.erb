@@ -1,19 +1,19 @@
 <h1>Here are my models:</h1>
 
 <% for i in 1..@todo_models.count do%>
-	<%= @todo_models.find(i) %>
-	<%= @todo_models.find(i).tasks %>
-	<%= @todo_models.find(i).finished %>
+	<p> <%= "Todo " + i.to_s %> </p>
+	<p> <%= @todo_models.find(i).tasks %> </p>
+	<p> <%= @todo_models.find(i).finished %> </p>
 <% end %>
 
 <% for i in 1..@user_models.count do%>
-	<%= @user_models.find(i) %>
-	<%= @user_models.find(i).username %>
-	<%= @user_models.find(i).email %>
-	<%= @user_models.find(i).age %>
+	<p> <%= "User " + i.to_s %> </p>
+	<p> <%= @user_models.find(i).username %> </p>
+	<p> <%= @user_models.find(i).email %> </p>
+	<p> <%= @user_models.find(i).age %> </p>
 <% end %>
 
 <% for i in 1..@cat_models.count do%>
-	<%= @cat_models.find(i) %>
-	<%= @cat_models.find(i).name %>
+	<p> <%= "Cat " + i.to_s %> </p>
+	<p> <%= @cat_models.find(i).name %> </p>
 <% end %>
